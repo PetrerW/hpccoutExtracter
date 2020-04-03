@@ -1,0 +1,11 @@
+HPL_Tflops
+StarDGEMM_Gflops
+SingleDGEMM_Gflops
+PTRANS_GBs
+MPIRandomAccess_GUPs
+StarRandomAccess_LCG_GUPs
+SingleRandomAccess_LCG_GUPs
+StarSTREAM_Triad
+StarFFT_Gflops
+SingleFFT_Gflops
+MPIFFT_Gflops
