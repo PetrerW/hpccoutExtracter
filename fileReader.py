@@ -1,7 +1,7 @@
 import os
 
 class fileReader:
-    def readLines(inputFile):
+    def readLines(self, inputFile):
         __location__ = os.path.realpath(
             os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -16,6 +16,6 @@ class fileReader:
 
 if __name__ == '__main__':
     l = fileReader
-    labels = l.readLines("labels.txt")
+    labels = l.readLines(fileReader, "metrics.txt")
     for label in labels:
         print(label)
