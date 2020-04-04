@@ -5,4 +5,4 @@ input:
     metrics: "metrics.txt"
 output:
     #Name of .csv file. Example: extracted.csv
-    extracted: "extracted.csv"
+    extract_to: "extracted.csv"

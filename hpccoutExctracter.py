@@ -6,9 +6,10 @@ class hpccoutExctacter:
     __hpccoutFilename = "hpccout.txt"
     __csvFilename = "extractedMetrics.csv"
 
-    def __init__(self, inputMetricsFilename, hpccoutFilename):
+    def __init__(self, inputMetricsFilename, hpccoutFilename, csvFilename):
         self.__inputmetricsFilename = inputMetricsFilename
         self.__hpccoutFilename = hpccoutFilename
+        self.__csvFilename = csvFilename
 
     def readOutput(self):
         l = fileReader
@@ -50,7 +51,7 @@ class hpccoutExctacter:
         f.close()
 
 if __name__ == '__main__':
-    l = hpccoutExctacter("metrics.txt", "hpccout.txt")
+    l = hpccoutExctacter("metrics.txt", "hpccout.txt", "extracted.csv")
     lines = l.readOutput()
     for line in lines:
         print(line)
