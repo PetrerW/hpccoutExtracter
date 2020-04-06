@@ -1,8 +1,9 @@
 input:
     #A file with output from hpcc
-    hpccout: "hpcc-docket.txt"
+    hpccout: "2020.03.30-RPI3-4proc.txt"
     #A file containing metrics you're interested in:
     metrics: "metrics.txt"
 output:
-    #Name of .csv file. Example: extracted.csv
-    extract_to: "extracted.csv"
+    #Name of .csv file. Example: extracted.csv, E:/example/extracterd.csv
+    #Slashes in the path depend on OS
+    extract_to: "E:/Piotr/Programowanie/Python/hpccoutExtractor/dir/2020.03.30-RPI3-4proc.csv"

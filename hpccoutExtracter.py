@@ -1,7 +1,7 @@
 import yaml
-from hpccoutExctracter import hpccoutExctacter
+from extracter import extracter
 
-class main:
+class hpccoutExctracter:
     def readConfig(self):
         with open("config.yaml", "r") as ymlfile:
             config = yaml.load(ymlfile)
@@ -10,11 +10,12 @@ class main:
     
     def extract(self):
         config = self.readConfig()
-        extracter = hpccoutExctacter(config["input"]["metrics"], 
+        e = extracter(config["input"]["metrics"], 
         config["input"]["hpccout"], 
-        config["input"]["extract_to"])
+        config["output"]["extract_to"])
 
-        extracter.saveToCsv()
+        e.saveToCsv()
 
 if __name__ == '__main__':
-    main.extract(main)
+    h = hpccoutExctracter()
+    h.extract()
