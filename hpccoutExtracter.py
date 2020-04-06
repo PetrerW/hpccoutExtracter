@@ -16,6 +16,8 @@ class hpccoutExctracter:
 
         e.saveToCsv()
 
+        print("Saved to " + config["output"]["extract_to"])
+
 if __name__ == '__main__':
     h = hpccoutExctracter()
     h.extract()
