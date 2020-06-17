@@ -1,6 +1,6 @@
 input:
     #A file with output from hpcc
-    hpccout: "hpccout_logs.txt"
+    #hpccout: "hpccout_logs.txt"
     #A file containing metrics you're interested in:
     metrics: "metrics.txt"
 output:
