@@ -1,9 +1,11 @@
 input:
     #A file with output from hpcc
     #hpccout: "hpccout_logs.txt"
+    hpccout: "hpcc-x86.txt"
     #A file containing metrics you're interested in:
     metrics: "metrics.txt"
 output:
     #Name of .csv file. Example: extracted.csv, E:/example/hpccout_logs.csv
     #Slashes in the path depend on OS
     #extract_to: "hpccout_logs.csv"
+    extract_to: "hpcc-x86.csv"
