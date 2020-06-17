@@ -7,5 +7,9 @@ input:
 output:
     #Name of .csv file. Example: extracted.csv, E:/example/hpccout_logs.csv
     #Slashes in the path depend on OS
+<<<<<<< HEAD
     #extract_to: "hpccout_logs.csv"
     extract_to: "hpcc-x86.csv"
+=======
+    extract_to: "hpccout_logs.csv"
+>>>>>>> origin/master
